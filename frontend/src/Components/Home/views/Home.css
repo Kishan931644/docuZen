@@ -1,0 +1,22 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-text {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.home-text1 {
+  color: #3a5fd6;
+}
+
+.home-text2 {
+  color: #a940ce;
+}

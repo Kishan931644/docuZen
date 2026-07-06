@@ -1,0 +1,102 @@
+@import url('@radix-ui/colors/tomato-dark.css');
+@import url('@radix-ui/colors/mauve-dark.css');
+
+.dark-editor {
+    --accentBase: var(--tomato-1);
+    --accentBgSubtle: var(--tomato-2);
+    --accentBg: var(--tomato-3);
+    --accentBgHover: var(--tomato-4);
+    --accentBgActive: var(--tomato-5);
+    --accentLine: var(--tomato-6);
+    --accentBorder: var(--tomato-7);
+    --accentBorderHover: var(--tomato-8);
+    --accentSolid: var(--tomato-9);
+    --accentSolidHover: var(--tomato-10);
+    --accentText: var(--tomato-11);
+    --accentTextContrast: var(--tomato-12);
+
+    --baseBase: var(--mauve-1);
+    --baseBgSubtle: var(--mauve-2);
+    --baseBg: var(--mauve-3);
+    --baseBgHover: var(--mauve-4);
+    --baseBgActive: var(--mauve-5);
+    --baseLine: var(--mauve-6);
+    --baseBorder: var(--mauve-7);
+    --baseBorderHover: var(--mauve-8);
+    --baseSolid: var(--mauve-9);
+    --baseSolidHover: var(--mauve-10);
+    --baseText: var(--mauve-11);
+    --baseTextContrast: var(--mauve-12);
+
+    --admonitionTipBg: var(--cyan4);
+    --admonitionTipBorder: var(--cyan8);
+
+    --admonitionInfoBg: var(--grass4);
+    --admonitionInfoBorder: var(--grass8);
+
+    --admonitionCautionBg: var(--amber4);
+    --admonitionCautionBorder: var(--amber8);
+
+    --admonitionDangerBg: var(--red4);
+    --admonitionDangerBorder: var(--red8);
+
+    --admonitionNoteBg: var(--mauve-4);
+    --admonitionNoteBorder: var(--mauve-8);
+
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    color: var(--baseText);
+    --basePageBg: #1e1e1e;
+    background: var(--basePageBg);
+}
+
+.cm-sourceView.mdxeditor-source-editor {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.markDown {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+.mdx-editor {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.mdx-editor::-webkit-scrollbar {
+    width: .5rem;
+}
+
+.copy-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    display: flex;
+    gap: 0.5rem;
+    place-items: center
+}
+
+.mdxeditor .cm-editor .co {
+    background-color: #1e1e1e !important;
+}
+
+button._selectTrigger_uazmk_305,
+button._selectTrigger_uazmk_306,
+button._selectTrigger_uazmk_307:not(.mdxeditor-toolbar button) {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .mdx-editor {
+        color: white !important;
+    }
+
+}

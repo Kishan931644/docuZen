@@ -1,0 +1,31 @@
+Generate a detailed Markdown documentation for the following API code. Ensure the documentation is complete and follows the format below:
+
+## ROUTE_NAME (WHAT IT IS USED FOR)
+**Endpoint:** `API_PATH`  
+**Method:** `REQUEST_METHOD`  
+**Header:** `HEADER_PARAMS_IF_REQUEIRED_OR_NULL`
+
+### Request Body
+- **PARAMETER1** (DATA_TYPE, [REQUIRED OR OPTIONAL]): DESCRIPTION.
+- **PARAMETER2** (DATA_TYPE, [REQUIRED OR OPTIONAL]): DESCRIPTION.
+
+### Responses
+- **STATUS_CODE - STATUS_MESSAGE**
+    ```json
+    {
+      JSON_RESPONSE
+    }
+    ```
+
+- **STATUS_CODE - STATUS_MESSAGE**
+    ```json
+    {
+      JSON_RESPONSE
+    }
+    ```
+
+---
+
+[API_CODE_HERE]
+
+For the provided API code, generate Markdown documentation including endpoints, methods, request parameters, headers, and possible responses. Ensure the documentation is clear, precise, and follows the specified format exactly. 

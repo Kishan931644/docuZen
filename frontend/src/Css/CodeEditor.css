@@ -1,0 +1,12 @@
+.codeEditor {
+    overflow: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.generate-doc-btn {
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    z-index: 20;
+}
