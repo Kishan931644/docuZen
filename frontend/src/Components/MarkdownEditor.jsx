@@ -11,6 +11,7 @@ import {
     sandpackPlugin,
     codeMirrorPlugin,
     codeBlockPlugin,
+    CodeMirrorEditor,
     diffSourcePlugin,
     linkPlugin,
     linkDialogPlugin,
@@ -83,9 +84,49 @@ function MarkdownEditor() {
                     tablePlugin(),
                     linkPlugin(), linkDialogPlugin(),
                     diffSourcePlugin({ diffMarkdown: '', viewMode: 'rich-text' }),
-                    codeBlockPlugin({ defaultCodeBlockLanguage: 'json' }),
+                    codeBlockPlugin({
+                        defaultCodeBlockLanguage: 'json',
+                        // Catch-all so any language the AI outputs (or none) still renders
+                        // instead of throwing "Unsupported markdown syntax" in rich-text mode.
+                        codeBlockEditorDescriptors: [{ priority: -10, match: () => true, Editor: CodeMirrorEditor }]
+                    }),
                     sandpackPlugin({ sandpackConfig: simpleSandpackConfig }),
-                    codeMirrorPlugin({ codeBlockLanguages: { json: "JavaScript", js: "Javascript" } }),
+                    codeMirrorPlugin({
+                        codeBlockLanguages: {
+                            '': 'Plain Text',
+                            json: 'JSON',
+                            js: 'JavaScript',
+                            jsx: 'JavaScript (React)',
+                            ts: 'TypeScript',
+                            tsx: 'TypeScript (React)',
+                            css: 'CSS',
+                            html: 'HTML',
+                            xml: 'XML',
+                            bash: 'Bash',
+                            sh: 'Shell',
+                            shell: 'Shell',
+                            python: 'Python',
+                            py: 'Python',
+                            java: 'Java',
+                            c: 'C',
+                            cpp: 'C++',
+                            csharp: 'C#',
+                            go: 'Go',
+                            php: 'PHP',
+                            ruby: 'Ruby',
+                            rust: 'Rust',
+                            sql: 'SQL',
+                            yaml: 'YAML',
+                            yml: 'YAML',
+                            markdown: 'Markdown',
+                            md: 'Markdown',
+                            http: 'HTTP',
+                            graphql: 'GraphQL',
+                            diff: 'Diff',
+                            plaintext: 'Plain Text',
+                            text: 'Plain Text'
+                        }
+                    }),
                     toolbarPlugin({
                         toolbarContents: () => (
                             <>
