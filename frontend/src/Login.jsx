@@ -73,10 +73,6 @@ function Login() {
               <div className="submit-btn">
                 <button type="button" id="login" onClick={handleLogin}>Sign in</button>
               </div>
-              <div className="orsignuptext">
-                <span> Or sign in with </span>
-                <i></i>
-              </div>
             </div>
             <div className="redirect-link">
               <div>

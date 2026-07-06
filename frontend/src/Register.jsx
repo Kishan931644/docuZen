@@ -80,10 +80,6 @@ function Register() {
               <div className="submit-btn">
                 <button type="button" id="login" onClick={handleRegister}>Sign up</button>
               </div>
-              <div className="orsignuptext">
-                <span> Or signup with </span>
-                <i></i>
-              </div>
             </div>
             <div className="redirect-link">
               <div>
