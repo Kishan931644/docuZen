@@ -11,9 +11,11 @@ const Hero = (props) => {
           <p className="hero-text1 thq-body-large">{props.content1}</p>
         </div>
         <div className="hero-actions">
-          <button className="hero-button thq-button-filled">
-            <Link to='/register'><span className="hero-text2 thq-body-small">{props.action1}</span></Link>
-          </button>
+          <Link to='/register'>
+            <button className="hero-button thq-button-filled">
+              <span className="hero-text2 thq-body-small">{props.action1}</span>
+            </button>
+          </Link>
         </div>
       </div>
       <div>
