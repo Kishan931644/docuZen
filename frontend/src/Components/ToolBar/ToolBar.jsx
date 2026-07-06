@@ -40,7 +40,7 @@ const ToolBar = () => {
     setTitle(e.target.value);
   };
 
-  pdfMake.vfs = pdfFonts.pdfMake.vfs;
+  pdfMake.addVirtualFileSystem(pdfFonts);
 
   // Toggle between editable and non-editable state
   const toggleEdit = () => {
