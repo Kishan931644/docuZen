@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './footer.css'
 
 const Footer = ({
-  logoSrc = '/public/favicon1/favicon-32x32.png',
+  logoSrc = '/favicon1/favicon-32x32.png',
   logoAlt = 'DocuZen Logo',
   action1 = 'Subscribe to Newsletter',
   content2 = 'Stay updated with our latest news and features.',

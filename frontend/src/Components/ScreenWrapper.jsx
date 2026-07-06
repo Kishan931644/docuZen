@@ -31,7 +31,7 @@ export default function ScreenWrapper() {
             </PanelGroup>
 
             <button style={{ display: "flex", gap: ".4rem", alignItems: "center" }} className='generate-doc-btn' onClick={generate}>
-                <img width="18px" height="18px" src="/public/ai-technology.png" />
+                <img width="18px" height="18px" src="/ai-technology.png" />
                 {isGenerating ? "Generating..." : "Generate Document"}
             </button>
         </div>

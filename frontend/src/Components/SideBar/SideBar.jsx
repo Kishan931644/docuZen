@@ -80,7 +80,7 @@ const SideBar = () => {
   return (
     <div className={`sidebar ${isCollapsed ? 'collapsed' : 'expanded'}`}>
       <div className="sidebar-header" onClick={toggleCollapse}>
-        <img src='/public/favicon1/favicon-16x16.png' />
+        <img src='/favicon1/favicon-16x16.png' />
         <b style={{ display: `${isCollapsed ? "none" : "block"}` }}>DocuZen</b>
         <svg width="24px" height="24px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_iconCarrier">

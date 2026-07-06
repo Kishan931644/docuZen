@@ -74,13 +74,13 @@ Features1.defaultProps = {
   feature3Description:
     'Explain how users can tailor the documentation to their needs.',
   feature3Title: 'Customizable Output',
-  feature3ImgSrc: '/public/Macbook-Air-localhost.png',
-  feature1ImgSrc: '/public/Macbook-Air-localhost.png',
+  feature3ImgSrc: '/Macbook-Air-localhost.png',
+  feature1ImgSrc: '/Macbook-Air-localhost.png',
   feature2Description: 'Highlight the intuitive design for ease of use.',
   feature1Title: 'AI-Powered Documentation',
   feature3ImgAlt: 'Customizable Output',
   feature1Description: 'Describe how AI automates the documentation process.',
-  feature2ImgSrc: '/public/Macbook-Air-localhost.png',
+  feature2ImgSrc: '/Macbook-Air-localhost.png',
   feature2ImgAlt: 'User-Friendly Interface',
   feature2Title: 'User-Friendly Interface',
 }

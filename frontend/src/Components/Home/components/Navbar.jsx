@@ -12,7 +12,7 @@ const Navbar = ({
     <header className="navbar-container">
       <div data-thq="thq-navbar" className="navbar-navbar-interactive">
         <img
-          src="/public/favicon1/favicon-32x32.png"
+          src="/favicon1/favicon-32x32.png"
           alt={imageAlt}
           className="navbar-image"
         />

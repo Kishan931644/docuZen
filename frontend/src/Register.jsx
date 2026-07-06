@@ -40,7 +40,7 @@ function Register() {
       <div className='login-wrapper'>
         <div className="login-container">
           <div className="form-title">
-            <img src="/public/favicon1/favicon-32x32.png" />
+            <img src="/favicon1/favicon-32x32.png" />
             <h1>Sign Up</h1>
           </div>
           <form action="">
